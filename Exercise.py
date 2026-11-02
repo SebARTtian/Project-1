@@ -1,5 +1,14 @@
 import csv
 
+def totalAverage(hrs):
+	total = 0
+	for hr in hrs:
+		total = total + hr
+	total = total / len(hrs)
+	return total
+
+
+
 fname =  "StudentExercise.csv"
 fh =  open(fname)
 
@@ -14,3 +23,5 @@ for line in fh:
 		exercise = float(exercise)
 		hrs.append(exercise)
 print(hrs)
+
+print(totalAverage(hrs))
