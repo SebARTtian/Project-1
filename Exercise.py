@@ -19,10 +19,8 @@ def prop_above(hrs):
 
 def median(ls):
 	ls.sort()
-	total = len(ls) % 2
-	if total == 0:
-		mid = len(ls) // 2
-		return ls[mid]
+	mid = len(ls) // 2
+	return ls[mid]
 
 
 fname =  "StudentExercise.csv"
@@ -49,3 +47,4 @@ print(totalAverage(hrs))
 
 print(prop_above(hrs))
 
+print(median(hrs))
